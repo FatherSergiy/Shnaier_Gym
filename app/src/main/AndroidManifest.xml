@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Shnayder_Gym">
-        <activity android:name=".LessonsActivity"></activity>
+        <activity android:name=".StepActivity5"></activity>
+        <activity android:name=".StepActivity4" />
+        <activity android:name=".StepActivityFemale" />
+        <activity android:name=".StepActivityMale" />
+        <activity android:name=".LessonsActivity" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".StepActivity2" />
         <activity android:name=".SignInActivity" />

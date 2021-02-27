@@ -39,8 +39,8 @@ Button btn_muscle;
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(StepActivity1.this, SignInActivity.class));
+                startActivity(new Intent(StepActivity1.this, StepActivity2.class));
             }
-        }, 1000);
+        }, 1500);
     }
 }
