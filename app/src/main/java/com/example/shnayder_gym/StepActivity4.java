@@ -29,14 +29,21 @@ Button next;
         Handler handler=new Handler();
         Resources res=getResources();
         Drawable yellow= ResourcesCompat.getDrawable(res, R.drawable.button_yellow, null);
+        Drawable white=ResourcesCompat.getDrawable(res, R.drawable.button, null);
         switch (v.getId()){
             case R.id.button20:
                 btn1.setBackground(yellow);
+                btn2.setBackground(white);
+                btn3.setBackground(white);
                 break;
             case R.id.button21:
+                btn1.setBackground(white);
                 btn2.setBackground(yellow);
+                btn3.setBackground(white);
                 break;
             case R.id.button22:
+                btn1.setBackground(white);
+                btn2.setBackground(white);
                 btn3.setBackground(yellow);
                 break;
             case R.id.button23:

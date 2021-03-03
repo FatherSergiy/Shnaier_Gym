@@ -9,13 +9,17 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class StepActivityMale extends AppCompatActivity {
 Button hands;
 Button spine;
 Button torso;
 Button legs;
+    ImageView figure;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +28,9 @@ Button legs;
         spine=(Button)findViewById(R.id.button18);
         torso=(Button)findViewById(R.id.button17);
         legs=(Button)findViewById(R.id.button16);
+        figure=(ImageView) findViewById(R.id.imageView11);
+        Animation anim= AnimationUtils.loadAnimation(this, R.anim.figure);
+        figure.startAnimation(anim);
     }
     public void onClick(View v){
         Resources res=getResources();
